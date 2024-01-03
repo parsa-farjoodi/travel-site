@@ -1,0 +1,74 @@
+.travells-container{
+    height: 100vh;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 11px;
+    background-size: cover;
+    filter: brightness(95%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.travells-container .space{
+    width: 30%;
+}
+.travells-container .content{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 180px;
+    margin: 70px 0;
+}
+.travells-container .button{
+    margin: 40px 0;
+}
+.travells-container .button button{
+    border: none;
+    background-color: rgb(83, 0, 83);
+    width: 170px;
+    height: 43px;
+    color: white;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    outline: none;
+    transition: all .3s;
+}
+.travells-container .button button:hover{
+    background-color: rgb(206, 119, 5);
+}
+.content .title h2{
+    font-size: 45px;
+}
+.content .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* /////media-query//////// */
+@media(max-width:768px) {
+    .travells-container{
+        height: 80vh;
+    }
+    .travells-container .space{
+        width: 0;
+    }
+    .travells-container .content{
+        width: 100%;
+        padding: 10px;
+        margin: 30px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .content .title{
+        text-align: center!important;
+    }
+    .content .title h2{
+        font-size: 25px;
+    }
+}

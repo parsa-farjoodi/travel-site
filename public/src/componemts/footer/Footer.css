@@ -1,0 +1,84 @@
+.footer-container{
+    border-top: 1px solid rgb(209, 209, 209);
+}
+.footer-sections{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    height: 170px;
+}
+.bio, .contact, .social-media{
+    width: 30%;
+}
+.bio, .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bio{
+    margin-top: -24px;
+}
+.bio .title h1{
+    color: rgb(116, 6, 138);
+    text-shadow: 0px 4px 4px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.biographi p {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(182, 182, 182);
+}
+.contact-title h3, .social-media .title h3{
+    font-size: 20px;
+}
+.location, .call, .mail{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(182, 182, 182);
+}
+.location-icon, .call-icon, .mail-icon{
+    font-size: 18px!important;
+}
+.social-media{
+    margin-top: 10px;
+}
+.icons{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.social-media-icon{
+    background-color: rgb(233, 232, 232);
+    width: 40px;
+    height: 37px;
+    text-align: center;
+    line-height: 2;
+    transition: all .3s;
+}
+.social-media-icon .icon{
+    color: rgb(168, 168, 168)!important;
+    transition: all .3s;
+}
+.social-media-icon:hover{
+    background-color: rgb(131, 131, 131);
+}
+.social-media-icon .icon:hover{
+    color: rgb(219, 219, 219)!important;
+}
+
+
+
+/* /////media-queri///// */
+@media(max-width:768px){
+    .footer-sections{
+        display: block;
+    }
+    .bio, .contact, .social-media{
+        width: 100%;
+    }
+    .location, .call, .mail{
+        margin: 6px 0;
+    }
+}
